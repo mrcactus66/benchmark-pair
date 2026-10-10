@@ -142,7 +142,7 @@ def test_permissionless_review_owner_policy_and_no_replay(contract, direct_vm, d
 
 
 @pytest.mark.parametrize("mutation", [
-    {"value": "0"}, {"value": "-1"}, {"value": "1e3"}, {"unit": "ns"},
+    {"value": "0"}, {"value": "-1"}, {"value": "1e3"}, {"unit": "ns"}, {"unit": "s"},
     {"value": "0.0001", "unit": "us"}, {"sample_count": True},
     {"conditions": ["MATCH"]}, {"condition_quotes": ["fake"] * 3},
     {"sample_count": 100}, {"measurement_quote": "Unrelated run ThumbnailPreview recorded 0.1 ms for a different input size."},

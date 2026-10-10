@@ -48,7 +48,7 @@ python -m pytest -q
 genvm-lint lint contracts/benchmark_pair.py
 ```
 
-There are 36 direct tests covering unit conversion, exact speedup thresholds,
+There are 37 direct tests covering unit conversion, exact speedup thresholds,
 batch-size mismatch, sample floors, missing methodology, non-median statistics,
 owner control, immutable reviews, malformed extractions, decoy measurements,
 hash mismatch, and independent validator disagreement. The actual contract runs

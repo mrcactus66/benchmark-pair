@@ -69,8 +69,9 @@ def check_row(label: str, conditions: list[str], body: str, row: dict) -> None:
     ns = latency_ns(row["value"], row["unit"])
     if ns and any(s not in row["measurement_quote"] for s in (label, row["value"], row["unit"])):
         raise gl.vm.UserError("Measurement quote lacks label, value, or unit")
-    if ns and not re.search(r"(?<![0-9.])" + re.escape(row["value"]) + r"(?![0-9.])", row["measurement_quote"]):
-        raise gl.vm.UserError("Measurement value is not a complete numeric token")
+    if ns and not re.search(r"(?<![0-9.])" + re.escape(row["value"]) + r"\s+"
+            + re.escape(row["unit"]) + r"(?![A-Za-z])", row["measurement_quote"]):
+        raise gl.vm.UserError("Measurement value and unit must form an exact source token")
     if not ns and (row["metric"] != "UNKNOWN" or row["measurement_quote"]):
         raise gl.vm.UserError("Missing measurement must remain unknown")
     if row["sample_count"] and not re.search(r"(?<![0-9])" + str(row["sample_count"]) + r"(?![0-9])", row["sample_quote"]):
