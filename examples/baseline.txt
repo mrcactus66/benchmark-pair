@@ -1,0 +1,12 @@
+Synthetic benchmark fixture. These are fictional measurements, not product claims.
+
+Run Cedar v1 uses RasterSet r2: RGB images resized from 1024x1024 to 256x256
+with bilinear interpolation. Execution uses one CPU thread, no GPU, and a
+request batch size of 1. The same input images are used for every timed request.
+
+Cedar v1 median per-request latency was 12.5 ms, measured after startup.
+Cedar v1 had 1000 timed requests. Its initial 50 warmup requests were excluded
+from both the timing and that sample count.
+
+Unrelated run ThumbnailPreview recorded 0.1 ms for a different input size.
+That number does not describe Cedar v1.
