@@ -1,0 +1,145 @@
+{
+  "hash": "0xd81e54ce8db1fae40a489209ccd68e0eddfa6e74c2b1f8a96484d1a0509db0d0",
+  "from_address": "0x436c61600EE951937386A4373d839ba1395267Cb",
+  "to_address": "0xD27df300C3F2235d8a785edb3D76C897Ae26ddAD",
+  "value": 0,
+  "type": 2,
+  "status_name": "ACCEPTED",
+  "result_name": "MAJORITY_AGREE",
+  "leader_only": false,
+  "rotation_count": 0,
+  "num_of_rounds": "1",
+  "last_round": {
+    "round": "0",
+    "leader_index": "0",
+    "votes_committed": "5",
+    "votes_revealed": "5",
+    "appeal_bond": "0",
+    "rotations_left": "3",
+    "result": 6,
+    "round_validators": [
+      "0xcE1d6bBB36B744536153966B4DD42276f5ADd0F8",
+      "0x03D58A4DeF6fDFc032A56374785a5F571D07Bc11",
+      "0xE6BD8050758CB15fC88387223E31Ae2708B119dC",
+      "0x14402D49f317CE1a2F35BAE01b1804A2A9703dCb",
+      "0x5310dcF075E0BD47d29B8ec6581F736C767f54D2"
+    ],
+    "validator_votes_hash": [
+      "0x85ae4250e9b5edfdcad7588f7c2a7b08344944f7e621ec11b3c7412306ec1a09",
+      "0x1258ca9e47a013dad5499abbadf368cbc80573c99425ebf3f97a26676270d2a0",
+      "0xfd70dc408b85f39044b838e941eeff700b5e6012305e35c10dd8b0946bc0de6b",
+      "0xcb7f497a6470ad2fb8a531d90735ab519c352e514e7ccd782c1fe5ea22fe69fd",
+      "0xe2cc66f8bf4fb24b0c8122f4946c3ecf70b5c5b430faa17ec2b929765e329c3e"
+    ],
+    "validator_votes": [
+      1,
+      5,
+      1,
+      5,
+      1
+    ],
+    "validator_votes_name": [
+      "AGREE",
+      "IDLE",
+      "AGREE",
+      "IDLE",
+      "AGREE"
+    ]
+  },
+  "explorer": "https://explorer-studio.genlayer.com/tx/0xd81e54ce8db1fae40a489209ccd68e0eddfa6e74c2b1f8a96484d1a0509db0d0",
+  "executions": [
+    {
+      "mode": "leader",
+      "vote": null,
+      "execution_result": "SUCCESS",
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "nondet_disagree": null,
+      "contract_state_hash": "cc9b83ded635a1fd70de0d91ea46109c631cef766bee3bd5357e98336b709d4e"
+    },
+    {
+      "mode": "validator",
+      "vote": "agree",
+      "execution_result": "SUCCESS",
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "nondet_disagree": null,
+      "contract_state_hash": "cc9b83ded635a1fd70de0d91ea46109c631cef766bee3bd5357e98336b709d4e"
+    },
+    {
+      "mode": "validator",
+      "vote": "idle",
+      "execution_result": "ERROR",
+      "genvm_result": {
+        "stderr": "Validator execution cancelled after quorum",
+        "stdout": "",
+        "raw_error": {
+          "fatal": false,
+          "causes": [
+            "VALIDATOR_QUORUM_REACHED"
+          ]
+        },
+        "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+      },
+      "nondet_disagree": null,
+      "contract_state_hash": null
+    },
+    {
+      "mode": "validator",
+      "vote": "agree",
+      "execution_result": "SUCCESS",
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "nondet_disagree": null,
+      "contract_state_hash": "cc9b83ded635a1fd70de0d91ea46109c631cef766bee3bd5357e98336b709d4e"
+    },
+    {
+      "mode": "validator",
+      "vote": "idle",
+      "execution_result": "ERROR",
+      "genvm_result": {
+        "stderr": "Validator execution cancelled after quorum",
+        "stdout": "",
+        "raw_error": {
+          "fatal": false,
+          "causes": [
+            "VALIDATOR_QUORUM_REACHED"
+          ]
+        },
+        "error_code": "CONSENSUS_VALIDATOR_QUORUM_REACHED"
+      },
+      "nondet_disagree": null,
+      "contract_state_hash": null
+    },
+    {
+      "mode": "validator",
+      "vote": "agree",
+      "execution_result": "SUCCESS",
+      "genvm_result": {
+        "stderr": "",
+        "stdout": "",
+        "raw_error": null,
+        "error_code": null,
+        "error_description": null
+      },
+      "nondet_disagree": null,
+      "contract_state_hash": "cc9b83ded635a1fd70de0d91ea46109c631cef766bee3bd5357e98336b709d4e"
+    }
+  ],
+  "calldata": "{\"args\":[\"missing\",\"Cedar v1\",\"Cedar v2\",\"[\\\"RasterSet r2, RGB 1024x1024 resized to 256x256 with bilinear interpolation\\\", \\\"Exactly one CPU thread and no GPU\\\", \\\"Request batch size is 1\\\"]\",100,2000,\"[{\\\"url\\\": \\\"https://raw.githubusercontent.com/mrcactus66/benchmark-pair/ec166d8af7eaad5efe3e222f825e52b7757f8513/examples/baseline.txt\\\", \\\"sha256\\\": \\\"cc4ddb7f8dbe35d069076a594606063712b3d45ed6dbb5dc696605e24a4d27a8\\\"}, {\\\"url\\\": \\\"https://raw.githubusercontent.com/mrcactus66/benchmark-pair/ec166d8af7eaad5efe3e222f825e52b7757f8513/examples/candidate-missing.txt\\\", \\\"sha256\\\": \\\"69e548f40e8b0f9931dda12fd522f00495c4679d2dc0592a7e69e401f2306892\\\"}]\"],\"method\":\"register\"}"
+}

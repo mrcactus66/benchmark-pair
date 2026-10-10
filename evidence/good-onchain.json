@@ -1,0 +1,53 @@
+{
+  "pair_id": "good",
+  "policy_sha256": "f5e3476a4948aab02702e908aaab24e6d978a16c65347841585ff7087821bf6e",
+  "qualifies": true,
+  "reports": [
+    {
+      "condition_quotes": [
+        "Run Cedar v1 uses RasterSet r2: RGB images resized from 1024x1024 to 256x256\nwith bilinear interpolation.",
+        "Execution uses one CPU thread, no GPU, and a\nrequest batch size of 1.",
+        "Execution uses one CPU thread, no GPU, and a\nrequest batch size of 1."
+      ],
+      "conditions": [
+        "MATCH",
+        "MATCH",
+        "MATCH"
+      ],
+      "measurement_quote": "Cedar v1 median per-request latency was 12.5 ms, measured after startup.",
+      "metric": "MEDIAN",
+      "sample_count": 1000,
+      "sample_quote": "Cedar v1 had 1000 timed requests.",
+      "sha256": "cc4ddb7f8dbe35d069076a594606063712b3d45ed6dbb5dc696605e24a4d27a8",
+      "unit": "ms",
+      "url": "https://raw.githubusercontent.com/mrcactus66/benchmark-pair/ec166d8af7eaad5efe3e222f825e52b7757f8513/examples/baseline.txt",
+      "value": "12.5",
+      "warmup": "EXCLUDED",
+      "warmup_quote": "Its initial 50 warmup requests were excluded\nfrom both the timing and that sample count."
+    },
+    {
+      "condition_quotes": [
+        "Run Cedar v2 uses RasterSet r2: RGB images resized from 1024x1024 to 256x256\nwith bilinear interpolation.",
+        "Execution uses one CPU thread, no GPU",
+        "and a\nrequest batch size of 1."
+      ],
+      "conditions": [
+        "MATCH",
+        "MATCH",
+        "MATCH"
+      ],
+      "measurement_quote": "Cedar v2 median per-request latency was 10000 us, measured after startup.",
+      "metric": "MEDIAN",
+      "sample_count": 1000,
+      "sample_quote": "Cedar v2 had 1000 timed requests.",
+      "sha256": "e5cdd5c6ac1a93b2f9df2b7b79715a2943b575341be44a32896b5c9e05697115",
+      "unit": "us",
+      "url": "https://raw.githubusercontent.com/mrcactus66/benchmark-pair/ec166d8af7eaad5efe3e222f825e52b7757f8513/examples/candidate-good.txt",
+      "value": "10000",
+      "warmup": "EXCLUDED",
+      "warmup_quote": "Its initial 50 warmup requests were excluded\nfrom both the timing and that sample count."
+    }
+  ],
+  "speedup_ppm": 1250000,
+  "status": "COMPARABLE"
+}

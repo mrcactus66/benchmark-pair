@@ -114,7 +114,10 @@ elif command in ("register", "review", "read"):
     elif command == "review":
         log(case + "-review", client.write_contract(contract, "review", args=[case], value=0, leader_only=False))
     else:
+        policy_json = client.read_contract(contract, "get_pair", args=[case])
+        save(case + "-policy-onchain.json", json.loads(policy_json))
         result = json.loads(client.read_contract(contract, "get_review", args=[case]))
+        assert result["policy_sha256"] == hashlib.sha256(policy_json.encode()).hexdigest()
         save(case + "-onchain.json", result)
         print(json.dumps({k: v for k, v in result.items() if k != "reports"}, indent=2))
 else:

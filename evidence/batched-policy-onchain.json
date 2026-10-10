@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    "RasterSet r2, RGB 1024x1024 resized to 256x256 with bilinear interpolation",
+    "Exactly one CPU thread and no GPU",
+    "Request batch size is 1"
+  ],
+  "labels": [
+    "Cedar v1",
+    "Cedar v2"
+  ],
+  "minimum_samples": 100,
+  "minimum_speedup_bps": 2000,
+  "sources": [
+    {
+      "sha256": "cc4ddb7f8dbe35d069076a594606063712b3d45ed6dbb5dc696605e24a4d27a8",
+      "url": "https://raw.githubusercontent.com/mrcactus66/benchmark-pair/ec166d8af7eaad5efe3e222f825e52b7757f8513/examples/baseline.txt"
+    },
+    {
+      "sha256": "587aeec469b797f7136db1d1cd67c9d8b941dc0e8cb82eeac0cdf8f4802c3324",
+      "url": "https://raw.githubusercontent.com/mrcactus66/benchmark-pair/ec166d8af7eaad5efe3e222f825e52b7757f8513/examples/candidate-batched.txt"
+    }
+  ]
+}
